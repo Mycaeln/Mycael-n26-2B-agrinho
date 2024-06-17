@@ -1,68 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d4edda;
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
-
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
-    text-align: center;
-    color: #333;
+  text-align: center;
+  color: #333;
 }
-
-input {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
 button:hover {
-    background-color: #218838;
+  background-color: #0056b3;
 }
-
 #results {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-
-.place {
-    background: #f9f9f9;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+#hotelResults {
+  margin-top: 20px;
 }
-
-.place h3 {
-    margin: 0;
-    color: #333;
-}
-
-.place p {
-    margin: 5px 0;
-    color: #666;
-}
-
-.place strong {
-    color: #333;
+p {
+  margin-bottom: 10px;
 }
