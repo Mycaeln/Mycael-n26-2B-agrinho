@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #f0f0f0;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -11,10 +12,12 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h1 {
   text-align: center;
   color: #333;
 }
+
 input[type="text"] {
   width: 100%;
   padding: 10px;
@@ -22,6 +25,7 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -30,15 +34,19 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #0056b3;
 }
+
 #results {
   margin-top: 20px;
 }
+
 #hotelResults {
   margin-top: 20px;
 }
+
 p {
   margin-bottom: 10px;
 }

@@ -19,10 +19,10 @@ document.getElementById('searchButton').addEventListener('click', function() {
     const results = document.getElementById('results');
     results.innerHTML = '';
 
-    const filteredPlaces = places.filter(place => 
+    const filteredPlaces = places.filter(place =>
         place.name.toLowerCase().includes(query) || place.region.toLowerCase().includes(query)
     );
-    
+
     if (filteredPlaces.length > 0) {
         filteredPlaces.forEach(place => {
             const placeElement = document.createElement('div');
@@ -40,10 +40,10 @@ document.getElementById('hotelSearchButton').addEventListener('click', function(
     const hotelResults = document.getElementById('hotelResults');
     hotelResults.innerHTML = '';
 
-    const filteredHotels = hotels.filter(hotel => 
+    const filteredHotels = hotels.filter(hotel =>
         hotel.name.toLowerCase().includes(query) || hotel.location.toLowerCase().includes(query)
     );
-    
+
     if (filteredHotels.length > 0) {
         filteredHotels.forEach(hotel => {
             const hotelElement = document.createElement('div');
