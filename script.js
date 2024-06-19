@@ -1,57 +1,44 @@
-const places = [
-    { name: "Serra da Mantiqueira", description: "Um belo lugar com montanhas e natureza exuberante.", region: "Sudeste" },
-    { name: "Chapada Diamantina", description: "Paisagens incríveis com cachoeiras e trilhas.", region: "Nordeste" },
-    { name: "Serra Gaúcha", description: "Conhecida pelo clima frio e pelas vinícolas.", region: "Sul" },
-    { name: "Pantanal", description: "Ideal para quem gosta de observar a vida selvagem.", region: "Centro-Oeste" },
-    { name: "Amazônia", description: "A maior floresta tropical do mundo, com biodiversidade impressionante.", region: "Norte" }
-];
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Simulação de resultados de hotéis
+    const hotels = [
+        { name: "Hotel Exemplo 1", address: "Rua da Flora, 123", rating: "4.5" },
+        { name: "Hotel Exemplo 2", address: "Avenida Floriano, 456", rating: "4.0" },
+        { name: "Hotel Exemplo 3", address: "Praça das Arvores, 789", rating: "3.5" }
+    ];
 
-const hotels = [
-    { name: "Hotel Fazenda Boa Vista", location: "Serra da Mantiqueira" },
-    { name: "Pousada Casa de Jorge", location: "Chapada Diamantina" },
-    { name: "Hotel & Spa do Vinho", location: "Serra Gaúcha" },
-    { name: "Hotel Sesc Porto Cercado", location: "Pantanal" },
-    { name: "Amazon Eco Lodge", location: "Amazônia" }
-];
+    // Captura o valor da pesquisa
+    const query = document.getElementById('searchInput').value;
 
-document.getElementById('searchButton').addEventListener('click', function() {
-    const query = document.getElementById('searchInput').value.toLowerCase();
-    const results = document.getElementById('results');
-    results.innerHTML = '';
+    // Seleciona o elemento de resultados
+    const resultsDiv = document.getElementById('results');
+    
+    // Limpa resultados anteriores
+    resultsDiv.innerHTML = '';
 
-    const filteredPlaces = places.filter(place =>
-        place.name.toLowerCase().includes(query) || place.region.toLowerCase().includes(query)
-    );
+    // Adiciona uma mensagem de cabeçalho
+    const header = document.createElement('h2');
+    header.textContent = `Hotéis próximos de "${query}"`;
+    resultsDiv.appendChild(header);
 
-    if (filteredPlaces.length > 0) {
-        filteredPlaces.forEach(place => {
-            const placeElement = document.createElement('div');
-            placeElement.classList.add('place');
-            placeElement.innerHTML = `<h3>${place.name}</h3><p>${place.description}</p><p><strong>Região:</strong> ${place.region}</p>`;
-            results.appendChild(placeElement);
-        });
-    } else {
-        results.innerHTML = '<p>Nenhum lugar encontrado.</p>';
-    }
-});
+    // Adiciona os resultados dos hotéis
+    hotels.forEach(hotel => {
+        const hotelDiv = document.createElement('div');
+        hotelDiv.className = 'hotel';
+        
+        const hotelName = document.createElement('h3');
+        hotelName.textContent = hotel.name;
+        hotelDiv.appendChild(hotelName);
 
-document.getElementById('hotelSearchButton').addEventListener('click', function() {
-    const query = document.getElementById('hotelSearchInput').value.toLowerCase();
-    const hotelResults = document.getElementById('hotelResults');
-    hotelResults.innerHTML = '';
+        const hotelAddress = document.createElement('p');
+        hotelAddress.textContent = `Endereço: ${hotel.address}`;
+        hotelDiv.appendChild(hotelAddress);
 
-    const filteredHotels = hotels.filter(hotel =>
-        hotel.name.toLowerCase().includes(query) || hotel.location.toLowerCase().includes(query)
-    );
+        const hotelRating = document.createElement('p');
+        hotelRating.textContent = `Avaliação: ${hotel.rating}`;
+        hotelDiv.appendChild(hotelRating);
 
-    if (filteredHotels.length > 0) {
-        filteredHotels.forEach(hotel => {
-            const hotelElement = document.createElement('div');
-            hotelElement.classList.add('hotel');
-            hotelElement.innerHTML = `<h3>${hotel.name}</h3><p><strong>Localidade:</strong> ${hotel.location}</p>`;
-            hotelResults.appendChild(hotelElement);
-        });
-    } else {
-        hotelResults.innerHTML = '<p>Nenhum hotel encontrado.</p>';
-    }
+        resultsDiv.appendChild(hotelDiv);
+    });
 });

@@ -1,38 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa de Férias no Campo</title>
+    <title>Pesquisa de Férias</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <div class="container">
-        <h1>Pesquise Lugares para Férias no Campo</h1>
-        <input type="text" id="searchInput" placeholder="Digite o nome do lugar ou região...">
-        <button id="searchButton">Pesquisar</button>
-        <div id="results"></div>
-
-        <h2>Encontre Hotéis Próximos</h2>
-        <input type="text" id="hotelSearchInput" placeholder="Digite o nome do hotel ou localidade...">
-        <button id="hotelSearchButton">Pesquisar Hotéis</button>
-        <div id="hotelResults"></div>
-
-        <p>Explorar a natureza e aproveitar o ar fresco são algumas das melhores formas de relaxar e recarregar as
-            energias. As férias no campo oferecem uma oportunidade única de se desconectar do estresse diário e se
-            reconectar com a natureza.</p>
-        <p>Existem muitos destinos encantadores no campo que proporcionam experiências inesquecíveis. Desde chalés
-            aconchegantes até fazendas pitorescas, há uma variedade de opções para todos os gostos e orçamentos.</p>
-        <p>Além de desfrutar da tranquilidade e beleza natural, você pode participar de diversas atividades ao ar livre.
-            Caminhadas, passeios a cavalo, pesca e piqueniques são apenas algumas das opções disponíveis para os amantes
-            da natureza.</p>
-        <p>Quer você esteja planejando uma escapada romântica, umas férias em família ou uma aventura solo, pesquisar e
-            encontrar o lugar perfeito no campo é o primeiro passo para uma experiência memorável. Utilize a nossa
-            ferramenta de pesquisa para descobrir destinos incríveis e começar a planejar suas próximas férias.</p>
+        <h1>Encontre seu destino de férias</h1>
+        <form id="searchForm" class="search-form">
+            <input type="text" id="searchInput" placeholder="Digite um lugar..." required>
+            <button type="submit">Pesquisar</button>
+        </form>
+        <div id="results" class="results">
+            <!-- Resultados serão exibidos aqui -->
+        </div>
+        <div class="importance">
+            <h2>A Importância de Passar Férias no Campo</h2>
+            <p>Passar férias no campo proporciona uma fuga do ritmo acelerado da vida urbana. O ambiente tranquilo e a proximidade com a natureza permitem que as pessoas relaxem e recarreguem suas energias. A ausência de ruídos urbanos e a presença de sons naturais, como o canto dos pássaros e o murmúrio dos riachos, criam uma atmosfera de paz e serenidade.</p>
+            <p>Além disso, as férias no campo oferecem oportunidades para atividades físicas ao ar livre, como caminhadas, ciclismo e natação em rios e lagos. Estas atividades não só melhoram a saúde física, mas também promovem o bem-estar mental. O ar fresco e a exposição ao sol ajudam a aumentar os níveis de vitamina D, melhorando o humor e a saúde geral.</p>
+            <p>Outra vantagem de passar férias no campo é a possibilidade de experimentar um estilo de vida mais simples e sustentável. Muitas áreas rurais oferecem acomodações em fazendas e chalés que permitem aos visitantes se envolverem em atividades agrícolas, como colheita de frutas e cuidado com animais. Essas experiências podem ensinar lições valiosas sobre sustentabilidade e o valor do trabalho manual.</p>
+            <p>Finalmente, passar férias no campo fortalece os laços familiares e sociais. Longe das distrações da tecnologia e da internet, as famílias têm a chance de passar mais tempo juntas, conversando, jogando e explorando a natureza. Este tempo de qualidade ajuda a criar memórias duradouras e a fortalecer as relações interpessoais.</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
