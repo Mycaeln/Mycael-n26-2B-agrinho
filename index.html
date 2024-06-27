@@ -3,27 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa de Férias</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Férias no Campo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .places, .hotels {
+            margin-top: 10px;
+        }
+        .place, .hotel {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Encontre seu destino de férias</h1>
-        <form id="searchForm" class="search-form">
-            <input type="text" id="searchInput" placeholder="Digite um lugar..." required>
-            <button type="submit">Pesquisar</button>
-        </form>
-        <div id="results" class="results">
-            <!-- Resultados serão exibidos aqui -->
+    <h1>Férias no Campo</h1>
+
+    <div class="section">
+        <p>Férias no campo são uma excelente oportunidade para desconectar do estresse da vida urbana e se reconectar com a natureza. Com paisagens deslumbrantes e tranquilidade, o campo oferece um refúgio perfeito para relaxar e recarregar as energias.</p>
+    </div>
+
+    <div class="section">
+        <p>Além de relaxar, há diversas atividades para se fazer no campo, como caminhadas, passeios a cavalo, pesca e piqueniques. Essas atividades permitem que você aproveite o ar fresco e a beleza natural do ambiente rural.</p>
+    </div>
+
+    <div class="section">
+        <p>Para quem gosta de fotografar, o campo oferece cenários incríveis, com flora e fauna diversificadas. Capturar o nascer ou o pôr do sol no campo pode render fotos espetaculares e momentos inesquecíveis.</p>
+    </div>
+
+    <div class="section">
+        <p>Se você deseja uma experiência mais cultural, muitas áreas rurais possuem fazendas que oferecem passeios educativos, onde é possível aprender sobre a vida no campo, o cultivo de alimentos e a criação de animais.</p>
+    </div>
+
+    <h2>Lugares no Campo</h2>
+    <div class="places">
+        <div class="place">
+            <h3>Fazenda Verde</h3>
+            <p>Localizada nas colinas, a Fazenda Verde oferece trilhas para caminhada, passeios a cavalo e uma vista deslumbrante das montanhas.</p>
         </div>
-        <div class="importance">
-            <h2>A Importância de Passar Férias no Campo</h2>
-            <p>Passar férias no campo proporciona uma fuga do ritmo acelerado da vida urbana. O ambiente tranquilo e a proximidade com a natureza permitem que as pessoas relaxem e recarreguem suas energias. A ausência de ruídos urbanos e a presença de sons naturais, como o canto dos pássaros e o murmúrio dos riachos, criam uma atmosfera de paz e serenidade.</p>
-            <p>Além disso, as férias no campo oferecem oportunidades para atividades físicas ao ar livre, como caminhadas, ciclismo e natação em rios e lagos. Estas atividades não só melhoram a saúde física, mas também promovem o bem-estar mental. O ar fresco e a exposição ao sol ajudam a aumentar os níveis de vitamina D, melhorando o humor e a saúde geral.</p>
-            <p>Outra vantagem de passar férias no campo é a possibilidade de experimentar um estilo de vida mais simples e sustentável. Muitas áreas rurais oferecem acomodações em fazendas e chalés que permitem aos visitantes se envolverem em atividades agrícolas, como colheita de frutas e cuidado com animais. Essas experiências podem ensinar lições valiosas sobre sustentabilidade e o valor do trabalho manual.</p>
-            <p>Finalmente, passar férias no campo fortalece os laços familiares e sociais. Longe das distrações da tecnologia e da internet, as famílias têm a chance de passar mais tempo juntas, conversando, jogando e explorando a natureza. Este tempo de qualidade ajuda a criar memórias duradouras e a fortalecer as relações interpessoais.</p>
+        <div class="place">
+            <h3>Parque Natural do Vale</h3>
+            <p>Um parque extenso com diversas trilhas, áreas para piqueniques e um lago onde é possível pescar e nadar.</p>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <h2>Hotéis Próximos</h2>
+    <div class="hotels">
+        <div class="hotel">
+            <h3>Hotel Fazenda do Sol</h3>
+            <p>Com acomodações confortáveis e várias atividades ao ar livre, este hotel é ideal para famílias e casais que buscam um refúgio tranquilo.</p>
+        </div>
+        <div class="hotel">
+            <h3>Pousada Campo Verde</h3>
+            <p>Esta pousada charmosa oferece quartos aconchegantes, café da manhã caseiro e proximidade com diversas atrações naturais.</p>
+        </div>
+    </div>
 </body>
 </html>
