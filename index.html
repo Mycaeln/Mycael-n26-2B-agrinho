@@ -31,6 +31,15 @@
             margin: 0 auto;
             width: 150px; /* Ajuste o tamanho da logo conforme necessário */
         }
+        .search-section {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3e7;
+            border: 1px solid #ccc;
+        }
+        .search-section label {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -52,6 +61,19 @@
 
     <div class="section">
         <p>Se você deseja uma experiência mais cultural, muitas áreas rurais possuem fazendas que oferecem passeios educativos, onde é possível aprender sobre a vida no campo, o cultivo de alimentos e a criação de animais.</p>
+    </div>
+
+    <div class="search-section">
+        <h2>Pesquisar Lugares</h2>
+        <form action="#" method="GET">
+            <label for="place-type">Escolha um tipo de lugar:</label>
+            <select id="place-type" name="place-type">
+                <option value="florestas">Florestas</option>
+                <option value="montanhas">Montanhas</option>
+                <option value="fazendas">Fazendas</option>
+            </select>
+            <button type="submit">Pesquisar</button>
+        </form>
     </div>
 
     <h2>Lugares no Campo</h2>
@@ -79,4 +101,3 @@
     </div>
 </body>
 </html>
-    
